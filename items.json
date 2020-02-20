@@ -1,0 +1,43 @@
+{
+    "music":[
+        {
+            "id":1,
+            "name":"SATURATION 3",
+            "price": 1999,
+            "imgName":"sat 3.jpg"
+        },
+        {
+            "id":2,
+            "name":"Ginger",
+            "price": 1999,
+            "imgName":"ginger.jpg"
+        }
+    ],
+    "merch":[
+        {
+            "id":3,
+            "name":"Grey Hoodie",
+            "price": 4999,
+            "imgName":"BROCKHAMPTON-Texas-Heart-Grey-Hoodie-_329260-front-US.jpg"
+        },
+        {
+            "id":4,
+            "name":"White Graphic",
+            "price": 2999,
+            "imgName":"BROCKHAMPTON-Rainbow-White-T-Shirt-_329256-front-US.jpg"
+        },
+        {
+            "id":5,
+            "name":"Dad Hat",
+            "price": 1999,
+            "imgName":"BROCKHAMPTON-Black-Strapback-Hat-_329669-front-US.jpg"
+        },
+        {
+            "id":6,
+            "name":"Dad Hat 2",
+            "price": 1999,
+            "imgName":"BROCKHAMPTON-Yellow-Strapback-Hat-_329670-front-US.jpg"
+        }
+
+    ]
+}

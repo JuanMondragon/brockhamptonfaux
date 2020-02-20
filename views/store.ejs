@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/ee36107b70.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet">
+    <script src="https://checkout.stripe.com/checkout.js" defer></script>
+    <script>
+        var stripePublicKey ='<%= stripePublicKey %>'
+    </script>
+    
+    <script  src="main.js" defer></script>
+    <title>Brockhampton | Merch </title>
+</head>
+<body>
+    <header class="main-header">
+        <nav class=" nav main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="store">Merch</a></li>
+                <li><a href="about.html">About</a></li>
+
+            </ul>
+        </nav>
+        
+        <h1 class="band-name band-name-large">Brockhampton</h1>
+    </header>
+
+
+
+<section class="container content-section"> 
+        <h2 class="section-header">Music</h2>
+
+    <div class="shop-items">
+
+        <% items.music.forEach(function(item){ %>
+        <div class="shop-item"      data-item-id="<%= item.id %>">
+                <span class="shop-item-title"><%= item.name %></span>
+        
+                <img class="shop-item-image" src="./imgs/<%= item.imgName %>" alt="">
+                <div class="shop-details">
+                    <span class="item-price">$<%= item.price / 100 %></span>
+                    <button class="btn btn-primary shop-item-button"  type="button"> ADD TO CART</button>
+                </div>
+        </div>
+    <% }) %>
+
+
+        
+    
+    </div>  
+</section>
+
+    
+
+<section class="container content-section">
+    <h2 class="section-header">Merch</h2>
+
+    <div class="shop-items">
+        <% items.merch.forEach(function(item){ %>
+            <div class="shop-item" data-item-id="<%= item.id %>">
+                <span class="shop-item-title"><%= item.name %></span>
+            
+                <img class="shop-item-image" src="./imgs/<%= item.imgName %>" alt="">
+                <div class="shop-details">
+                    <span class="item-price">$<%= item.price / 100 %></span>
+                    <button class="btn btn-primary shop-item-button"  type="button"> ADD TO CART</button>
+                </div>
+            </div>
+        <% }) %>
+
+
+           
+    </div>
+
+
+    
+
+
+        
+        
+</section>
+    
+
+<section class="container content-section">
+        <h2 class="section-header">CART</h2>
+
+
+    
+
+
+
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+
+        <div class="cart-items">
+        
+        </div>
+
+
+
+        
+        
+
+
+    <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">$0</span>
+    </div>
+        
+    <button class="btn btn-primary btn-purchase" role="button">PURCHASE</button>
+        
+      
+        
+</section>
+
+
+
+
+    <footer class="main-footer-2">
+        <div class="container main-footer-container">
+            <h3 class="band-name">Brockhampton</h3>
+            <ul class="nav footer-nav">
+                <li>
+                    <a href="https://spotify.com" target="_blank">
+                        <i class="fab fa-spotify fa-2x"></i></li>
+                    </a>
+                <li>
+                    <a href="https://facebook.com" target="_blank">
+                        <i class="fab fa-facebook fa-2x"></i></li>
+                    </a>
+                <li>
+                    <a href="https://youtube.com" target="_blank">
+                        <i class="fab fa-youtube fa-2x"></i></li>
+                    </a>
+                
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>
