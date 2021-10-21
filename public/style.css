@@ -12,9 +12,9 @@ body {
   height: 100vh;
   background-color: rgb(224, 224, 221);
 }
-body {
+* {
   -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none !important ; /* Firefox */
 }
 body::-webkit-scrollbar {
   display: none;
